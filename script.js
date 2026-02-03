@@ -6,7 +6,7 @@ const suggestionBox = document.getElementById("suggestions");
 
 let allProducts = [];
 let currentPage = 1;
-let itemsPerPage = 8; 
+let itemsPerPage = 8; // show 8 products per page
 
 // ================= FETCH PRODUCTS =================
 fetch("https://dummyjson.com/products")
@@ -106,23 +106,23 @@ inputBox.addEventListener("input", () => {
 });
 
 // ================= SEARCH BUTTON CLICK =================
-btn.addEventListener("click", () => {
-  console.log("BUTTON CLICKED ✅");
-  const query = inputBox.value.trim();
-  console.log("BUTTON CLICKED ✅");
+// btn.addEventListener("click", () => {
+//   console.log("BUTTON CLICKED ✅");
+//   const query = inputBox.value.trim();
+//   console.log("BUTTON CLICKED ✅");
 
-  if (!query) {
-    alert("Please type something!");
-    return;
-  }
+//   if (!query) {
+//     alert("Please type something!");
+//     return;
+//   }
 
-  saveSearch(query); // save in localStorage
+//   saveSearch(query); // save in localStorage
 
-  // redirect to search page
-  window.location.href = `search.html?q=${query}`;
+//   // redirect to search page
+//   // window.location.href = `search.html?q=${query}`;
 
-  inputBox.value = "";
-});
+//   inputBox.value = "";
+// });
 
 btn.addEventListener("click", () => {
   const query = inputBox.value.trim();
