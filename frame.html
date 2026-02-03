@@ -1,26 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ecommerce Website</title>
-    <link rel="stylesheet" href="project.css">
-</head>
-<body>
+    <link rel="stylesheet" href="project.css" />
+  </head>
+  <body>
     <header>
-        <h1> 🏪 Ecommerce Website</h1>
+      <h1>🏪 Ecommerce Website</h1>
     </header>
-    <input type="text" id="inputbox" placeholder="Search here">
-    <button id="btn">Search</button>
-    <main>
-        <h2>Product</h2>
-        <div id="product-container" class="products">
+    <a href="history.html">📜 View History</a>
 
-        </div>
+    <div class="search-box">
+      <input
+        type="text"
+        id="inputBox"
+        placeholder="search here"
+        autocomplete="off"
+      />
+      <button id="btn">SEARCH</button>
+
+      <div id="suggestions"></div>
+    </div>
+
+    <main>
+      <h2>Products</h2>
+      <div id="product-container" class="products"></div>
+      <div id="pagination"></div>
     </main>
 
-    
-
     <script src="project.js"></script>
-</body>
+  </body>
 </html>
